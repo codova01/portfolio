@@ -56,7 +56,7 @@ const EXPERIENCE = [
     desc: 'Participating in an open-source program focused on collaborative development, contributing to real-world repositories while building experience with Git, GitHub, and community-driven workflows.',
   },
   {
-    title: 'Open Source Contributor',
+    title: 'Open Source Connect · 2026',
     kicker: 'OPEN SOURCE CONTRIBUTOR · 2026',
     desc: 'Contributing to open-source projects through Open Source Connect India and gaining hands-on experience with collaborative development and real-world codebases.',
   },

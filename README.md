@@ -1,45 +1,150 @@
-# Navya — Portfolio
+Navya's Portfolio
 
-React + Vite + Tailwind portfolio, dark ember/maroon aesthetic.
+A modern, responsive personal portfolio website showcasing my projects, technical skills, experience, and journey as a Computer Science Engineering student.
 
-## Run locally
+🌐 Live: https://navforge-three.vercel.app/
 
-```bash
+✨ Features
+Modern & Responsive Design — Optimized for desktop, tablet, and mobile
+Dark Developer Aesthetic — Minimal interface with a technical/editorial visual style
+Project Showcase — Highlights selected software and web development projects
+Technical Stack — Organized overview of languages, frameworks, databases, and tools
+Experience & Community — Includes open-source involvement and campus initiatives
+Smooth Navigation — Section-based navigation with smooth scrolling
+Responsive Layout — Adapts across different screen sizes
+Vercel Deployment — Automatically deployed through GitHub
+🛠️ Tech Stack
+Frontend
+React
+JavaScript
+HTML5
+CSS3
+Vite
+Backend & Databases
+Node.js
+Express.js
+FastAPI
+PostgreSQL
+Supabase
+SQL
+Languages
+Python
+C++
+JavaScript
+Tools & Platforms
+Git
+GitHub
+VS Code
+Vercel
+📂 Featured Projects
+Campus Compass
+
+AI-powered society recommendation platform that matches students with college societies based on their skills, interests, availability, and goals.
+
+Tech: Python · Streamlit · Supabase · PostgreSQL
+
+ShikshaFlow
+
+Smart education management platform designed to bring assignments, attendance, and learning-related features into one application.
+
+Tech: JavaScript · Web Technologies
+
+AuraSense
+
+Accessibility-focused assistive web application combining computer vision and speech capabilities to improve interaction and accessibility.
+
+Tech: JavaScript · Node.js · Express · FastAPI · Azure Computer Vision · Web Speech API
+
+💼 Experience & Community
+Campus Ambassador — E-Cell, IIT Bombay
+
+Representing E-Cell IIT Bombay on campus and helping promote entrepreneurship, innovation, and student initiatives.
+
+Open Source Contributor — Open Source Connect India
+
+Beginning my open-source contribution journey through community-driven projects and collaborative development.
+
+GSSoC'26
+
+Participating in GirlsScript Summer of Code to explore open-source development and collaborative software workflows.
+
+📁 Project Structure
+navya-portfolio/
+├── public/                 # Static assets
+├── src/
+│   ├── assets/             # Images and other assets
+│   ├── App.jsx             # Main application component
+│   ├── index.css           # Global styles
+│   └── main.jsx            # Application entry point
+├── package.json            # Project dependencies and scripts
+├── package-lock.json       # Dependency lock file
+├── vite.config.js          # Vite configuration
+└── README.md               # Project documentation
+🚀 Getting Started
+Prerequisites
+
+Make sure you have the following installed:
+
+Node.js
+npm
+Git
+Clone the Repository
+git clone https://github.com/codova01/whosthis.git
+cd whosthis
+Install Dependencies
 npm install
+Run Locally
 npm run dev
-```
 
-Opens at http://localhost:5173
+The development server will start and provide a local URL, usually:
 
-## Build for production
+http://localhost:5173
+🔄 Development Workflow
 
-```bash
-npm run build
-```
+This project is connected to GitHub and deployed through Vercel.
 
-Outputs to `dist/`.
+Edit locally
+    ↓
+Commit changes
+    ↓
+Push to GitHub
+    ↓
+Vercel automatically builds
+    ↓
+Live portfolio updated
 
-## Deploy (free, easiest: Vercel)
+This allows the portfolio to be continuously updated without manually redeploying it through Vercel.
 
-1. Push this repo to GitHub (see below).
-2. Go to vercel.com → New Project → import your repo.
-3. Framework preset: Vite. Leave build settings default. Deploy.
+🌐 Deployment
 
-## Push to your existing GitHub repo
+The portfolio is deployed using Vercel.
 
-From inside this folder (or after copying these files into your cloned repo):
+Every push to the production GitHub branch triggers a new deployment automatically.
 
-```bash
-git add .
-git commit -m "Add portfolio site"
-git push
-```
+Live Website:
+https://navforge-three.vercel.app/
 
-## Editing your content
+📱 Responsive Design
 
-All content lives in `src/App.jsx`:
-- `PROJECTS` array — your project cards
-- `SKILLS` array — skill groups
-- Hero text, email, and social links are inline in the JSX — search for your name/email to find them.
+The website is designed to provide a consistent experience across:
 
-Colors and fonts are defined in `tailwind.config.js` under `theme.extend`.
+Desktop
+Laptop
+Tablet
+Mobile devices
+🎨 Design
+
+The portfolio uses a dark, minimal visual style with:
+
+High-contrast typography
+Orange accent elements
+Developer-focused visual language
+Responsive layouts
+Minimal animations and interactions
+📬 Contact
+
+Feel free to connect with me for opportunities, collaborations, or interesting projects.
+
+Email: navyaumat@gmail.com
+
+Built with React, curiosity, and a lot of debugging.

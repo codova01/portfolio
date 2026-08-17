@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import GradientWaves from './components/GradientWaves'
 
 const NAV = [
   { label: 'Work', href: '#work' },
@@ -162,43 +163,89 @@ export default function App() {
       </header>
 
       {/* HERO */}
-      <section id="top" className="relative pt-40 pb-32 px-6 md:px-10 bg-ember-radial">
-        <div className="hero-glow absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-ember/20 blur-[140px] rounded-full pointer-events-none" />
-        <div className="max-w-6xl mx-auto relative">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-6" data-reveal>
-            CS Undergraduate · Amritsar, Punjab
-          </p>
-          <h1
-            className="font-display font-bold text-[15vw] md:text-[7.5rem] leading-[0.9] tracking-tight text-bone mb-8"
-            data-reveal
-          >
-            NAVYA
-          </h1>
-          <p className="font-display text-2xl md:text-4xl text-gradient font-medium max-w-3xl mb-8 leading-tight" data-reveal>
-            Building Systems. Solving Problems.
-          </p>
-          <p className="text-ash text-base md:text-lg max-w-2xl mb-10 leading-relaxed" data-reveal>
-            Sophomore Computer Science Engineering student building software and web
-            applications, with a focus on backend systems, databases, and problem
-            solving. Currently exploring open source and building things that solve
-            real problems.
-          </p>
-          <div className="flex flex-wrap gap-4" data-reveal>
-            <a
-              href="#work"
-              className="bg-ember text-void font-mono text-xs uppercase tracking-widest px-6 py-3 rounded-full font-medium hover:bg-amber transition-colors"
-            >
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              className="border border-white/15 text-bone font-mono text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:border-amber hover:text-amber transition-colors"
-            >
-              Get In Touch
-            </a>
-          </div>
-        </div>
-      </section>
+<section
+  id="top"
+  className="relative min-h-screen pt-40 pb-32 px-6 md:px-10 bg-ember-radial overflow-hidden"
+>
+  {/* Gradient Waves Background */}
+  <div className="absolute inset-0 z-0">
+    <GradientWaves
+      horizonColor="#0b0503"
+      waveColor="#7c2d12"
+      crestColor="#f97316"
+      speed={0.4}
+      amplitude={3.1}
+      waveScale={0.8}
+      waveRatio={0.9}
+      swell={29.5}
+      turbulence={17.5}
+      tilt={1.11}
+      zoom={1.0}
+      height={6.9}
+      fogDepth={15}
+      detail="medium"
+      brightness={1.15}
+      opacity={0.7}
+      mouseInteraction={true}
+      parallaxStrength={0.55}
+      grain={true}
+      grainIntensity={0.05}
+    />
+  </div>
+
+  {/* Existing orange glow */}
+  <div className="hero-glow absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-ember/20 blur-[140px] rounded-full pointer-events-none z-[1]" />
+
+  {/* Existing hero content */}
+  <div className="max-w-6xl mx-auto relative z-10">
+    <p
+      className="font-mono text-xs uppercase tracking-[0.3em] text-amber mb-6"
+      data-reveal
+    >
+      CS Undergraduate · Amritsar, Punjab
+    </p>
+
+    <h1
+      className="font-display font-bold text-[15vw] md:text-[7.5rem] leading-[0.9] tracking-tight text-bone mb-8"
+      data-reveal
+    >
+      NAVYA
+    </h1>
+
+    <p
+      className="font-display text-2xl md:text-4xl text-gradient font-medium max-w-3xl mb-8 leading-tight"
+      data-reveal
+    >
+      Building Systems. Solving Problems.
+    </p>
+
+    <p
+      className="text-ash text-base md:text-lg max-w-2xl mb-10 leading-relaxed"
+      data-reveal
+    >
+      Sophomore Computer Science Engineering student building software and web
+      applications, with a focus on backend systems, databases, and problem
+      solving. Currently exploring open source and building things that solve
+      real problems.
+    </p>
+
+    <div className="flex flex-wrap gap-4" data-reveal>
+      <a
+        href="#work"
+        className="bg-ember text-void font-mono text-xs uppercase tracking-widest px-6 py-3 rounded-full font-medium hover:bg-amber transition-colors"
+      >
+        View My Work
+      </a>
+
+      <a
+        href="#contact"
+        className="border border-white/15 text-bone font-mono text-xs uppercase tracking-widest px-6 py-3 rounded-full hover:border-amber hover:text-amber transition-colors"
+      >
+        Get In Touch
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* ABOUT / SUMMARY STRIP */}
       <section className="border-y border-white/5 py-10 px-6 md:px-10" data-reveal>

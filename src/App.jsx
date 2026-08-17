@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import GradientWaves from './components/GradientWaves'
-import CursorGlow from './components/CursorGlow'
+import CursorGlow from './components/cursorGlow'
 
 
 const NAV = [
@@ -125,7 +125,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-void font-body relative">
       <CursorGlow />
-      
+
       <div className="grain" />
 
       {/* NAV */}

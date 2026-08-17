@@ -75,3 +75,85 @@ body {
   .hero-glow, .reveal { animation: none !important; }
   [data-reveal] { opacity: 1 !important; }
 }
+/* ================================
+   MOVING STATS MARQUEE
+================================ */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 280px;
+  padding: 0 40px;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  color: #f5a623;
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  margin-top: 5px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #a99d95;
+  white-space: nowrap;
+}
+
+.marquee-dot {
+  color: #f97316;
+  font-size: 1rem;
+  opacity: 0.7;
+  padding: 0 10px;
+}
+
+/* Continuous horizontal movement */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Slightly slower on smaller screens */
+@media (max-width: 768px) {
+  .marquee-track {
+    animation-duration: 22s;
+  }
+
+  .marquee-item {
+    min-width: 240px;
+    padding: 0 28px;
+  }
+
+  .stat-value {
+    font-size: 1.4rem;
+  }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation-play-state: paused;
+  }
+}

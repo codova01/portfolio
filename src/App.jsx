@@ -248,26 +248,73 @@ export default function App() {
 </section>
 
       {/* ABOUT / SUMMARY STRIP */}
-      <section className="border-y border-white/5 py-10 px-6 md:px-10" data-reveal>
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 font-mono text-xs uppercase tracking-widest text-ash">
-          <div>
-            <p className="text-amber text-2xl font-display normal-case tracking-tight mb-1">3</p>
-            Shipped Projects
-          </div>
-          <div>
-            <p className="text-amber text-2xl font-display normal-case tracking-tight mb-1">GSSoC'26</p>
-            Open Source Contributor
-          </div>
-          <div>
-            <p className="text-amber text-2xl font-display normal-case tracking-tight mb-1">B.Tech CSE</p>
-            Guru Nanak Dev University
-          </div>
-          <div>
-            <p className="text-amber text-2xl font-display normal-case tracking-tight mb-1">Backend & Web APIs</p>
-            Databases · Applications
-          </div>
-        </div>
-      </section>
+      {/* MOVING STATS STRIP */}
+<section className="border-y border-white/5 overflow-hidden py-8">
+  <div className="marquee">
+    <div className="marquee-track">
+
+      {/* First set */}
+      <div className="marquee-item">
+        <span className="stat-value">3</span>
+        <span className="stat-label">Shipped Projects</span>
+      </div>
+
+      <span className="marquee-dot">✦</span>
+
+      <div className="marquee-item">
+        <span className="stat-value">GSSoC'26</span>
+        <span className="stat-label">Open Source Contributor</span>
+      </div>
+
+      <span className="marquee-dot">✦</span>
+
+      <div className="marquee-item">
+        <span className="stat-value">B.Tech CSE</span>
+        <span className="stat-label">Guru Nanak Dev University</span>
+      </div>
+
+      <span className="marquee-dot">✦</span>
+
+      <div className="marquee-item">
+        <span className="stat-value">Backend & Web APIs</span>
+        <span className="stat-label">Databases · Applications</span>
+      </div>
+
+      <span className="marquee-dot">✦</span>
+
+
+      {/* Duplicate set — makes the loop seamless */}
+      <div className="marquee-item">
+        <span className="stat-value">3</span>
+        <span className="stat-label">Shipped Projects</span>
+      </div>
+
+      <span className="marquee-dot">✦</span>
+
+      <div className="marquee-item">
+        <span className="stat-value">GSSoC'26</span>
+        <span className="stat-label">Open Source Contributor</span>
+      </div>
+
+      <span className="marquee-dot">✦</span>
+
+      <div className="marquee-item">
+        <span className="stat-value">B.Tech CSE</span>
+        <span className="stat-label">Guru Nanak Dev University</span>
+      </div>
+
+      <span className="marquee-dot">✦</span>
+
+      <div className="marquee-item">
+        <span className="stat-value">Backend & Web APIs</span>
+        <span className="stat-label">Databases · Applications</span>
+      </div>
+
+      <span className="marquee-dot">✦</span>
+
+    </div>
+  </div>
+</section>
 
       {/* PROJECTS */}
       <section id="work" className="py-28 px-6 md:px-10">

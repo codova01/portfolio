@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './cursorGlow.css'
+import './cursorglow.css'
 
 export default function CursorGlow() {
   const [position, setPosition] = useState({ x: 0, y: 0 })

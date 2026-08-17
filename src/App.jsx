@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import GradientWaves from './components/GradientWaves'
-import CursorGlow from './components/cursorGlow'
+import CursorGlow from './components/cursorglow'
 
 
 const NAV = [

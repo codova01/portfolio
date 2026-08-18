@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import GradientWaves from './components/GradientWaves'
 import CursorGlow from './components/cursorglow'
+import TypewriterHeadline from "./components/TypewriterHeadline";
 
 
 const NAV = [
@@ -216,12 +217,7 @@ export default function App() {
       NAVYA
     </h1>
 
-    <p
-      className="font-display text-2xl md:text-4xl text-gradient font-medium max-w-3xl mb-8 leading-tight"
-      data-reveal
-    >
-      Building Systems. Solving Problems.
-    </p>
+   <TypewriterHeadline />
 
     <p
       className="text-ash text-base md:text-lg max-w-2xl mb-10 leading-relaxed"

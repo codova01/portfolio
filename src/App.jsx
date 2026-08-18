@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import GradientWaves from './components/GradientWaves'
 import CursorGlow from './components/cursorglow'
 import TypewriterHeadline from "./components/TypewriterHeadline";
-
+import SkillsTools from "./components/SkillsTools";
 
 const NAV = [
   { label: 'Work', href: '#work' },
@@ -39,13 +39,6 @@ const PROJECTS = [
     live: null,
     github: 'https://github.com/techwithbuddy/AuraSense',
   },
-]
-
-const SKILLS = [
-  { group: 'Languages', items: ['Python', 'C++', 'JavaScript'] },
-  { group: 'Backend & Databases', items: ['SQL / PostgreSQL', 'Supabase', 'REST APIs', 'Relational DB Design'] },
-  { group: 'Tools & Practices', items: ['Git & GitHub', 'Version Control', 'Debugging', 'Web Accessibility'] },
-  { group: 'Frameworks & Platforms', items: ['Streamlit', 'Node.js', 'Express.js', 'FastAPI'] },
 ]
 
 const EXPERIENCE = [
@@ -375,22 +368,7 @@ export default function App() {
           <div data-reveal>
             <SectionLabel n="02">Skills & Tools</SectionLabel>
           </div>
-          <div className="grid md:grid-cols-4 gap-6">
-            {SKILLS.map((s) => (
-              <div key={s.group} className="card-glow rounded-2xl p-6" data-reveal>
-                <h4 className="font-mono text-xs uppercase tracking-widest text-amber mb-4">
-                  {s.group}
-                </h4>
-                <ul className="space-y-2">
-                  {s.items.map((i) => (
-                    <li key={i} className="text-bone text-sm">
-                      {i}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <SkillsTools />
         </div>
       </section>
 
@@ -425,8 +403,8 @@ export default function App() {
             Let's Build <span className="text-gradient">Something Real.</span>
           </h2>
           <p className="text-ash max-w-xl mx-auto mb-10">
-            I’m always looking for the next problem worth solving.
-            If you’re building something ambitious and looking for someone curious, driven, and ready to learn, let’s talk.
+            I'm always looking for the next problem worth solving.
+            If you're building something ambitious and looking for someone curious, driven, and ready to learn, let's talk.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-16">
             <a
